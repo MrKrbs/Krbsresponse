@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("tech 2.jpg");
+    background-size: 1030%;
+    font-size: larger;
+    
+}
+h1{
+    background: linear-gradient(
+        transparent 0%,
+        transparent 30%,
+        black 30%,
+        black 80%,
+        transparent 80%,
+        transparent 100%
+    );
+}
+.menu-bar{
+    background-color:rgb(197, 46, 91);
+    text-align:left;
+    width: 12px;
+    height: 44px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(min(11.25rem,100%),1fr));
+    grid-gap: 1rem;
+    cursor: pointer;
+    
+
+}.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: rgb(199, 43, 43);
+   
+}
+.menu-bar ul li{
+    padding: 15px;
+    margin: 15px;
+    width: 170px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: black;
+}
+.menu-bar ul li:hover{
+    background:chocolate ;
+
+    
+}
+.menu-bar .fa{
+    margin-right: 8px;
+}
+.Active,.menu-bar ul li:hover{
+    background-color: chocolate;
+    border-radius: 3px;
+    
+}
+.sub-menu-1{
+
+    display: none;
+
+}
+
+.menu-bar ul li:hover .sub-menu-1{
+    display:block;
+    position:absolute;
+    background: rgb(236, 134, 60);
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display:block;
+    margin: 10px;
+    
+   
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    
+    margin: 20px;
+    width:20px;
+    border-bottom:1px solid rgb(0, 0, 0);
+    border-radius: 0;
+    background: transparent;
+    text-align: center;
+    
+}
+.menu-bar ul li:hover .sub-menu-1 ul :last-child{
+    border-bottom: none;
+}
+
+.header{
+    padding: 111px;
+    text-align: center;
+    color: chocolate;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    }
+    .card {
+      color:rgb(238, 127, 127) ;
+        box-shadow: 0 4px 8px 0 rgb(255, 29, 29);
+        border-radius: 5px;
+        padding: 20px;
+        margin-bottom: 20px;
+        width: calc(33.33% - 20px);
+        box-sizing: border-box;
+        transition: box-shadow 0.1s ease-in-out;
+    }
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    .card img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-bottom: 20px;
+    }
+    
+    .input-box input{
+        width: 80%;
+        height: 50px;
+        background: transparent;
+        border: ;
+        outline: ;
+        font-size: 1em;
+        padding: 0 35px 0 5px;
+
+        }
+    .input-box label {
+        position: absolute;  
+        pointer-events: none;
+        transition: .5s;
+        color:#fff;
+        font-size: 1em;
+      }
+      input:focus ~label
+      input:valid ~label{
+        top: -5px;
+    
+      }
+      .forget{
+        margin: -15px 0 15px;
+        font-size: .9em;
+        display: flex;
+        justify-content: space-between;
+
+      }
+    .forgot label input{
+        margin-right: 3px;
+    }
+    .forgot label a{
+        color: #fff;
+        font-size: .9em;
+        text-decoration: none;
+    }
+    .forgot label a:hover{
+        text-decoration: underline;
+    }
+    button{
+        width: 80%;
+        height: 20px;
+        background: #fff;  
+        border: none;
+        border-radius: 40px;
+        outline:none;
+        cursor: pointer;
+        font-size: 1em;
+        font-weight: 600;
+
+        }
+        .register{
+            font-size: .8em;
+            color: #fff;
+            text-align: center;
+            margin: 25px 0 10px ;
+
+        }
+        .register p a{
+            text-decoration: none;
+            color: #fff;
+
+        }
+        .register p a:hover{
+            text-decoration: underline;
+        }
+    .informations {
+        background-color:#000000;
+        color: aliceblue;
+        display: flex;
+        justify-content: space-between; 
+        margin: 21px;
+        
+    }
+    .informations ul{
+        list-style: none;
+        text-align: center;
+    }
+    .informations ul a{
+        text-decoration: none;
+        color: antiquewhite;
+    }
+    .informations.quick links{
+        align-self: flex-start;
+
+    }
+    .informations .links{
+        align-self: center;
+    }
+    .informations .contact{
+        align-self: flex-end;
+
+    }
+    .informations header{
+        font-size: x-large;
+        color: chocolate;
+    }
+   .footer{
+    text-align: center;
+    color: chocolate;
+   }

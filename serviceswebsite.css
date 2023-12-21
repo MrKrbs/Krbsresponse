@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(/tech\ 2.jpg);
+    background-size:1000%;
+
+}
+.menu-bar{
+    background-color:rgb(179, 169, 172);
+
+}
+.menu-bar ul{
+    padding: 12px 25px;
+    list-style: none;
+    font-size: 21px;
+    display: inline-flex;
+    
+    
+}
+.menu-bar ul li{
+    width: 122px;
+    padding: 12px;
+    margin: 12px;
+}
+.menu-bar ul li :hover{
+    background:chocolate;
+    border-radius: 3px;
+
+}
+.Active,.menu-bar ul li:hover{  
+     background: chocolate;}
+  
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color: black;
+}
+.hardware{
+    font-size: xx-large;
+}
+.hardware h1{
+    color: chocolate;
+}
